@@ -1,0 +1,19 @@
+<div class="py-5 container">
+    <ul class="list-group list-group-flush shadow">
+        <li class='list-group-item list-group-item-light'>
+            <h5 class='display-4 d-flex justify-content-center font-weight-bold'>Integrantes</h5>
+            <h5 class='display-5 d-flex justify-content-center font-weight-bold'>Uso de base de datos</h5>
+        </li>
+        <%users && users.forEach(user=> {%>
+            <li class="list-group-item list-group-item-light   d-flex justify-content-around">
+                <h6 class="text-primary">
+                    <%=user.nombre %>
+                </h6>
+                <h6 class="text-dark">
+                    <%=user.codigo%>
+                </h6>
+            </li>
+
+            <%}); %>
+    </ul>
+</div>
